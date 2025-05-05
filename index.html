@@ -1,42 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lotus Haven Villa</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f2ee;
-      color: #333;
-      text-align: center;
-      padding: 50px;
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #f2f2f2;
+      background-color: #000;
     }
-    h1 {
-      font-size: 3em;
+    header {
+      background: url('https://images.unsplash.com/photo-1582181235375-dc55276f8433?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      position: relative;
+    }
+    header::before {
+      content: '';
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+    .header-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-top: 150px;
+    }
+    .header-content img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+    .header-content h1 {
+      font-size: 42px;
+      letter-spacing: 2px;
+    }
+    .header-content p {
+      font-size: 18px;
+      margin-top: 10px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-button {
+      margin-top: 30px;
+      background-color: #a26fb2;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    section {
+      padding: 60px 20px;
+      background-color: #111;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 28px;
+      color: #e2c1f5;
+    }
+    .rooms {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .room {
+      background-color: #222;
+      margin: 10px;
+      padding: 20px;
+      width: 280px;
+      border-radius: 8px;
+    }
+    .room img {
+      width: 100%;
+      border-radius: 6px;
       margin-bottom: 10px;
     }
-    p {
-      font-size: 1.2em;
-      margin: 10px 0;
+    .room h3 {
+      color: #f2f2f2;
     }
-    a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      text-decoration: none;
-      background-color: #8ac4ae;
-      color: white;
-      border-radius: 5px;
-    }
-    a:hover {
-      background-color: #6da893;
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 14px;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Lotus Haven Villa</h1>
-  <p>Your peaceful retreat in Siem Reap, Cambodia.</p>
-  <a href="about.html">About Us</a>
-  <a href="rooms.html">Our Rooms</a>
+  <header>
+    <div class="header-content">
+      <img src="logo.png" alt="Lotus Haven Villa Logo" />
+      <h1>Lotus Haven Villa</h1>
+      <p>Experience serenity and mysticism just minutes from the gates of Angkor. Welcome to your sanctuary in Siem Reap.</p>
+      <button class="cta-button">Book Your Stay</button>
+    </div>
+  </header>
+
+  <section>
+    <h2>Our Rooms</h2>
+    <div class="rooms">
+      <div class="room">
+        <img src="room1.jpg" alt="Budget Room" />
+        <h3>Budget Room (Twin or King)</h3>
+      </div>
+      <div class="room">
+        <img src="room2.jpg" alt="Superior King" />
+        <h3>Superior King</h3>
+      </div>
+      <div class="room">
+        <img src="room3.jpg" alt="Deluxe King" />
+        <h3>Deluxe King</h3>
+      </div>
+      <div class="room">
+        <img src="room4.jpg" alt="Deluxe Twin" />
+        <h3>Deluxe Twin</h3>
+      </div>
+      <div class="room">
+        <img src="room5.jpg" alt="Executive Suite" />
+        <h3>Executive Suite (1BR)</h3>
+      </div>
+      <div class="room">
+        <img src="room6.jpg" alt="Family Suite" />
+        <h3>Family Suite (1BR)</h3>
+      </div>
+      <div class="room">
+        <img src="room7.jpg" alt="2BR Apartment" />
+        <h3>2BR Family Apartment</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Lotus Haven Villa, Siem Reap. All rights reserved.
+  </footer>
 </body>
 </html>
